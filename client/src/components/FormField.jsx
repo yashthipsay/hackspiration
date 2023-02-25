@@ -2,7 +2,7 @@ import React from 'react'
 
 const FormField = ({labelName, placeholder, inputType, isTextArea, value, handleChange}) => {
   return (
-    <label className="flex-1 w-full flex flex-col">
+    <label className="flex-1 w-full flex flex-col text-[black]">
         {labelName && (
             <span className="font-epilogue front-medium text-[14px] leading-[22px] text-[#808191] mb-[10px] ">{labelName}</span>
         )}
@@ -13,7 +13,7 @@ const FormField = ({labelName, placeholder, inputType, isTextArea, value, handle
             onChange={handleChange} 
             rows={10}
             placeholder={placeholder}
-            className='py-[15px] sm:px-[25px] px-[15px] outline-none border-[1px] border-[#3a3a43] bg-transaperant font-epilogue text-white text-[14px] placeholder:text-[#4b5264] rounded-[10px] sm:min-w-[300px] '
+            className='py-[15px] sm:px-[25px] px-[15px] outline-none border-[1px] border-[#3a3a43]  bg-black text-white font-epilogue text-[14px] placeholder:text-[#4b5264] rounded-[10px] sm:min-w-[300px] '
             />
         ) : (
             <input
@@ -23,7 +23,7 @@ const FormField = ({labelName, placeholder, inputType, isTextArea, value, handle
             type={inputType}
             
             placeholder={placeholder}
-            className='py-[15px] sm:px-[25px] px-[15px] outline-none border-[1px] border-[#3a3a43] bg-transaperant font-epilogue text-white text-[14px] placeholder:text-[#4b5264] rounded-[10px] sm:min-w-[300px] '
+            className='py-[15px] sm:px-[25px] px-[15px] outline-none border-[1px] border-[#3a3a43] bg-transaperant font-epilogue bg-black text-white text-[14px] placeholder:text-[#4b5264] rounded-[10px] sm:min-w-[300px] '
             />
         )}
     </label>
