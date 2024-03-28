@@ -5,10 +5,15 @@ module.exports = {
     defaultNetwork: "goerli",
     networks: {
       hardhat: {},
-      goerli: {
-        url: "https://rpc.ankr.com/eth_goerli",
-        accounts: [`0x${process.env.PRIVATE_KEY}`],
-      },
+      // goerli: {
+      //   url: "https://rpc.ankr.com/eth_goerli",
+      //   accounts: [`0x${process.env.PRIVATE_KEY}`],
+      // },
+
+      polygon: {
+        url: "137.rpc.thirdweb.com",
+        accounts: [`0x${process.env.PRIVATE_KEY}`]
+      }
     },
     settings: {
       optimizer: {

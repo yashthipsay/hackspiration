@@ -10,14 +10,14 @@ import { StateContextProvider } from "./context";
 import {ChakraProvider} from '@chakra-ui/react';
 
 // This is the chainId your dApp will work on.
-const activeChainId = ChainId.Mainnet;
+const activeChainId = ChainId.Polygon;
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
 
-    <ThirdwebProvider desiredChainId={ChainId.Goerli}>
+    <ThirdwebProvider desiredChainId={ChainId.Polygon}>
 <ChakraProvider>
 <Router>
       <StateContextProvider>

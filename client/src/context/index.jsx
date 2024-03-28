@@ -1,5 +1,5 @@
 import React, { useContext, createContext } from "react";
-
+import { contractAbi } from "../assets/contractAbi";
 import {
   useAddress,
   useContract,
@@ -13,7 +13,7 @@ const StateContext = createContext();
 
 export const StateContextProvider = ({ children }) => {
   const { contract } = useContract(
-    "0xEED55470A5047adCD89cAD7E91b5EE8745794AD6"
+    "0xBF86530f6985Ac162ffeeD51C8A2BDC695c27C07", contractAbi
   );
   const { mutateAsync: createCampaign } = useContractWrite(
     contract,
